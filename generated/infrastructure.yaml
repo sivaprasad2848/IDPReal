@@ -1,0 +1,17 @@
+application:
+  type: "python"
+  port: 5000
+  start_command: "python app.py"
+
+dependencies:
+  file: generated/pip-requirements.txt
+
+servers:
+  mysql:
+    enabled: false
+  redis:
+    enabled: false
+
+resources:
+  cpu: 1
+  memory: "512MB"
